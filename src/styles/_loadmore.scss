@@ -1,0 +1,19 @@
+.LoadMore {
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+    #loadMoreButtonElement {
+        font-size: 28px;
+        background-color: rgb(25, 7, 45);
+        color: rgb(255, 255, 255);
+        border-radius: 4px;
+        padding: 0px 10px;
+        margin: 10px 0px;
+        transform: skewX(-10deg);
+        cursor: pointer;
+    }
+}

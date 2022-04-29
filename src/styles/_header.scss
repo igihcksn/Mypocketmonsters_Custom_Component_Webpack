@@ -1,0 +1,46 @@
+poke-header {
+    display: flex;
+    padding: 1rem 1rem 0 1rem;
+    justify-content: space-around;
+
+    .pokeDescription {
+        padding: 2rem;
+
+        h1 {
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        @media (max-width: 900px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .pokeImage {
+        display: flex;
+        align-items: end;
+
+        img {
+            width: 500px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .hideOnMobile {
+        display: none;
+    }
+}

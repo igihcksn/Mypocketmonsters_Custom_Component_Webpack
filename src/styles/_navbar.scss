@@ -1,0 +1,62 @@
+@import './global';
+
+nav {
+    padding: 1rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    background-color: $basePurple;
+    justify-content: space-around;
+
+    a {
+        color: $baseWhite;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            color: $baseYellow;
+            transition: all ease-in .4s;
+        }
+    }
+
+    form {
+        display: flex;
+        transform: skewX(-10deg);
+
+        input {
+            width: 200px;
+            height: 30px;
+        }
+
+        button {
+            width: 80px;
+            border: none;
+            color: $basePurple;
+            font-weight: 600;
+            background-color: $baseYellow;
+        }
+    }
+
+    .backNav {
+        display: none;
+        color: $baseWhite;
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+
+        a {
+            display: none;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .backNav {
+            width: 100%;
+            align-items: flex-start;
+            display: block;
+        }
+    }
+}
